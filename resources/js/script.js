@@ -1,8 +1,26 @@
 /**
- * Created by jrvazquez on 2/18/16.
+ * Created by Joel Vazquez on 2/18/16.
  */
 $(document).ready(function() {
 
+    $('.js--section-features').waypoint(function(direction) {
+        if (direction == "down") {
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky');
+        }
+
+    }, {
+        offset: '60px'
+    });
+
+    /*
+     var waypoints = $('#handler-first').waypoint(function(direction) {
+     notify(this.element.id + ' hit 25% from top of window')
+     }, {
+     offset: '25%'
+     })
+     */
 
 
 });
